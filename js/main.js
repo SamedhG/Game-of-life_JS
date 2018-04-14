@@ -7,8 +7,8 @@
 // a row-major 2d array of booleans
 // representing wheather the piece is on or off
 var field = [];
-const width = 40;
-const height = 40;
+const width = 100;
+const height = 50;
 // create a blank 100 x 50 (w*h) filed
 function init(f) {
   //f = new Array();
@@ -55,19 +55,18 @@ function nextState(r, c) {
   }
   // return based on rules
   return (onNeighbors === 3) || ((onNeighbors === 2) && field[r][c]);
-  }
+}
 
-
-
+// sets up a basic test pattern
 function glider() {
-field[10][20] = true;
-field[11][21] = true
-field[12][21] = true
-field[12][20] = true
-field[12][19] = true;
+  field[10][20] = true;
+  field[11][21] = true
+  field[12][21] = true
+  field[12][20] = true
+  field[12][19] = true;
 
-// an oscilator
-field[22][21] = true
-field[22][20] = true
-field[22][19] = true;
+  // an oscilator
+  field[22][21] = true
+  field[22][20] = true
+  field[22][19] = true;
 }
