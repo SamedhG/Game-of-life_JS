@@ -64,7 +64,7 @@ function glider() {
   field[12][21] = true
   field[12][20] = true
   field[12][19] = true;
-  
+
   // an oscilator
   field[22][21] = true
   field[22][20] = true
@@ -75,10 +75,12 @@ function glider() {
 function change(e){
 
   var canvas = document.getElementById("GOLCanvas");
+  var rect = canvas.getBoundingClientRect();
+  let x = (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
+  let y = (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
   var context = canvas.getContext("2d");
-  posx = parseInt(e.clientX / 10) - 1;
-
-  posy = parseInt(e.clientY / 10) - 1;
+  posx = parseInt(x / 10);
+  posy = parseInt(y / 10);
   console.log(posy);
   field[posy][posx] = !field[posy][posx];
 
