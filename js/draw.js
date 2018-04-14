@@ -26,3 +26,20 @@ function draw() {
     }
   }
 }
+
+var playing = true;
+var ns = setInterval(nextStep, 100);
+var d = setInterval(draw, 100);
+
+function start() {
+  if (playing) {
+    clearInterval(ns);
+    clearInterval(d);
+    playing = false;
+  }
+  else {
+    ns = setInterval(nextStep, 100);
+    d = setInterval(draw, 100);
+    playing = true;
+  }
+}

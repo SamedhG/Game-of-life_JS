@@ -8,14 +8,17 @@
   <script src="js/main.js"></script>
   <script type="application/javascript" src="js/draw.js"></script>
 </head>
-<body  onload="glider(); draw();">
+<body  onload="glider();   ">
 
   <canvas
   id="GOLCanvas"
   width="1000"
   height="500"
   style="border:1px solid #000000;"
-  onclick="nextStep(); draw();"></canvas>
+  onclick="change(event); draw();"
+  onkeydown="nextStep(); draw();"></canvas>
+  <br />
+  <input type="button" value="start/stop" onclick="start();">
 </body>
 
 </html>
