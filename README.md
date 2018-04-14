@@ -1,1 +1,1 @@
-Goal : learn javascript bu=y implementing Conway's game of life
+Goal : learn javascript by implementing Conway's game of life
