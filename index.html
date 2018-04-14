@@ -8,14 +8,14 @@
   <script src="js/main.js"></script>
   <script type="application/javascript" src="js/draw.js"></script>
 </head>
-<body  onload="draw();">
+<body  onload="glider(); draw();">
 
   <canvas
   id="GOLCanvas"
   width="1000"
   height="500"
   style="border:1px solid #000000;"
-  onclick="getCursorPosition()"></canvas>
+  onclick="nextStep(); draw();"></canvas>
 </body>
 
 </html>
