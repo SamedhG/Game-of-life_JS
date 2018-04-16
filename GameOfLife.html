@@ -6,35 +6,43 @@
   </title>
   <meta charset="utf-8"/>
   <script src="js/game-of-life.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body onload="gameOfLife();">
   <center>
-  <h1> John Conway's Game Of Life</h1>
+    <h1> John Conway's Game Of Life</h1>
 
-  <p>
-  <input type="button" value="Start / Stop" id = "pauseBtn">
-   ---------
-  <input type="button" value="Spawn Glider" id = "gliderBtn"><br />
-  </p>
+    <p>
+      <a id = "pauseBtn" class="button"> Start / Stop</a>
+      ---------
+      <a id = "gliderBtn" class="button"> Spawn Glider </a>
+      <br />
+    </p>
 
-  <canvas
-  id="GOLCanvas"
-  width="1000"
-  height="500"
-  style="border:1px solid #000000;">
- </canvas>
+    <canvas
+    id="GOLCanvas"
+    width="1000"
+    height="500"
+    style="border:1px solid #000000;">
+  </canvas>
   <br />
-  </center>
-  <h3>
-    Rules : <br />
-    <ul>
+</center>
+<h3>
+  Rules : <br />
+  <ul>
     <li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li>
     <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
     <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
     <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
-    </ul>
-    <br />
-  </h3>
+  </ul>
+  <br />
+</h3>
+
+<p>
+  <a href="index.html" class="fa fa-home"></a>
+  <a href="https://github.com/SamedhG" class="fa fa-github"></a>
+  <a href="mailto:gsamedh@gmail.com" class="fa fa-envelope"></a>
+</p>
 </body>
 
 </html>
