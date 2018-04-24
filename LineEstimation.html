@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Line Estimator
+  </title>
+  <meta charset="utf-8"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="start()">
+  <script src="js/lineEstimation.js"></script>
+  <center>
+    <h1> Line Estimator with a Perceptron</h1>
+    <h3>
+      A perceptron is a single neuron.<br />
+      Each input to the perceptron has weights attached to it.<br />
+      The weights are adjusted based on correctness
+    </h3>
+    <p>
+      <h2>
+        <br />
+        <br />
+        Actual Line :
+        y =
+        0.
+        <input type="text" id = "gradient" size="1" pattern="\d{1,3}"/>
+        x + 0.
+        <input type="text" id = "y-inter" size="1" pattern="\d{1,3}"/>
+        <br />
+        <br />
+        Number of random points :
+        <input type="text" id = "num-tries" size="3" pattern="\d{1,5}"/>
+        <br />
+        <br />
+        <a id = "runBtn" class="button"> Run </a>
+
+
+      </h2>
+    </p>
+
+</center>
+
+<p>
+  <a href="index.html" class="fa fa-home"></a>
+  <a href="https://github.com/SamedhG" class="fa fa-github"></a>
+  <a href="mailto:gsamedh@gmail.com" class="fa fa-envelope"></a>
+</p>
+</body>
+
+</html>
